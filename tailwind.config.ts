@@ -19,8 +19,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        neu: ['var(--font-neu)', 'sans-serif'],
-        lombok: ['var(--font-lombok)', 'sans-serif'],
+        neu: 'var(--font-neu)',
+        lombok: 'var(--font-lombok)',
       },
       colors: {
         border: 'hsl(var(--border))',
