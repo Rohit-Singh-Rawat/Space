@@ -70,8 +70,8 @@ const backendAndTools: React.FC<React.SVGProps<SVGSVGElement>>[] = [
 
 const StacksCard = () => {
   return (
-    <div className="group/stack flex h-60 flex-col gap-2 overflow-hidden rounded-xl p-4 lg:p-6">
-      <div className="flex items-center gap-2">
+    <div className="group/stack bento col-span-4 h-56 p-4 lg:p-6">
+      <div className="mb-3 flex items-center gap-2">
         <Stack className="size-4" />
         <h2 className="bg-gradient-to-r from-[#8ebac7] via-[#4d8b9d] to-[#2a4b55] bg-clip-text font-neu text-sm font-medium text-transparent">
           Stacks
