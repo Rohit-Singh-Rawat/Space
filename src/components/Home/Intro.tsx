@@ -1,9 +1,11 @@
+import Link from 'next/link'
 import { Separator } from '../ui/separator'
+import { ArrowUpRight } from 'lucide-react'
 
 export const Intro = () => {
   return (
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
-      <div className="flex flex-col items-center space-y-5">
+      <div className="space-y-5 text-left">
         <p>
           Hi, I&apos;m Rohit Singh Rawat, an India-based Full-Stack developer,
           and I love crafting intuitive and dynamic{' '}
@@ -18,13 +20,27 @@ export const Intro = () => {
           experience.
         </p>
 
-        <Separator className="w-14 bg-[#888]/40" />
         <p>
           I find it fun to browse the web and design animated components and
           websites with tools like Framer motion. At the moment, I&apos;m also
           delving into Web3 and backend technologies.
         </p>
-        <p>Find my work</p>
+
+        <p>
+          A Snapshot of my work exp{' '}
+          <Link href={'/work'}>
+            .
+            <ArrowUpRight className="inline-block size-4 -translate-x-1 -translate-y-1" />
+          </Link>
+        </p>
+        <div className="flex w-full items-center justify-center">
+          <Separator className="w-14 bg-[#888]/40" />
+        </div>
+        <p>
+          Find me on twitter at{' '}
+          <Link href={'https://x.com/Spacing_Whale'}>x.com</Link> or drop a{' '}
+          <Link href={'mailto:rohitzrawat2003@gmail.com'}>email</Link>
+        </p>
       </div>
     </section>
   )

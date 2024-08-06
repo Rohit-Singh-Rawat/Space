@@ -17,7 +17,7 @@ export function Providers({ children }: ChildrenProps) {
         enableSystem
         disableTransitionOnChange
       >
-        <NextTopLoader showSpinner={false} color="#cc9d078c" />
+        <NextTopLoader showSpinner={false} color="#91990b" />
         {children}{' '}
       </ThemeProvider>
     </>
