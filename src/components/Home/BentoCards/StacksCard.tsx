@@ -70,10 +70,10 @@ const backendAndTools: React.FC<React.SVGProps<SVGSVGElement>>[] = [
 
 const StacksCard = () => {
   return (
-    <div className="flex h-60 flex-col gap-2 overflow-hidden rounded-xl p-4 lg:p-6">
+    <div className="group/stack flex h-60 flex-col gap-2 overflow-hidden rounded-xl p-4 lg:p-6">
       <div className="flex items-center gap-2">
         <Stack className="size-4" />
-        <h2 className="bg-gradient-to-r from-[#8ebac7] via-[#4d8b9d] to-[#2a4b55] bg-clip-text text-sm font-medium text-transparent">
+        <h2 className="bg-gradient-to-r from-[#8ebac7] via-[#4d8b9d] to-[#2a4b55] bg-clip-text font-neu text-sm font-medium text-transparent">
           Stacks
         </h2>
       </div>
@@ -81,7 +81,7 @@ const StacksCard = () => {
         {frontendTech.map((TechComponent, index) => (
           <TechComponent
             key={index}
-            className="size-10 grayscale hover:grayscale-0 dark:invert dark:hover:invert-0"
+            className="size-10 grayscale transition-all duration-500 ease-in-out hover:grayscale-0 dark:invert dark:hover:invert-0"
           />
         ))}
       </Marquee>
@@ -89,7 +89,7 @@ const StacksCard = () => {
         {backendAndTools.map((TechComponent, index) => (
           <TechComponent
             key={index}
-            className="size-10 grayscale hover:grayscale-0 dark:invert dark:hover:invert-0"
+            className="size-10 grayscale transition-all duration-500 ease-in-out hover:grayscale-0 dark:invert dark:hover:invert-0"
           />
         ))}
       </Marquee>

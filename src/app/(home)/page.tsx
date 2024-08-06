@@ -9,7 +9,7 @@ const page = () => {
         {' '}
         <div>
           {' '}
-          <h1 className="mb-1 mt-0 font-neu text-3xl font-semibold dark:text-white">
+          <h1 className="mb-1 mt-0 text-3xl font-semibold dark:text-white">
             Rohit Singh Rawat
           </h1>
           <div className="max-w-[58ch] text-zinc-600 dark:text-zinc-400">

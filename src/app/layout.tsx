@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/sonner'
 import React from 'react'
 import Header from '@/components/layouts/Header'
 import { Providers } from './Providers'
+import { lombok, neu } from '@/lib/font'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -48,7 +49,7 @@ interface ChildrenProps {
 export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${neu.variable} ${inter.className} ${lombok.variable}`}>
         <Providers>
           <div className="dark:bg-black">
             <Header />
