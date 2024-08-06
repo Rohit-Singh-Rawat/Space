@@ -1,60 +1,97 @@
-'use client'
-
-import {
-  SiCloudflare,
-  SiCss3,
-  SiFigma,
-  SiFirebase,
-  SiGit,
-  SiHtml5,
-  SiJavascript,
-  SiJest,
-  SiMarkdown,
-  SiMysql,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiPostgresql,
-  SiPrisma,
-  SiPython,
-  SiReact,
-  SiTailwindcss,
-  SiTypescript,
-  SiVisualstudiocode,
-  SiVite,
-} from '@icons-pack/react-simple-icons'
-import { ZapIcon } from 'lucide-react'
 import { Marquee } from '../Marquee'
+import Nextjs from '@/components/Icons/StackIcons/Nextjs'
+import { Html } from '@/components/Icons/StackIcons/Html'
+import { Css } from '@/components/Icons/StackIcons/css'
+import { Docker } from '@/components/Icons/StackIcons/docker'
+import { Express } from '@/components/Icons/StackIcons/express'
+import { Figma } from '@/components/Icons/StackIcons/figma'
+import { FramerMotion } from '@/components/Icons/StackIcons/FramerMotion'
+import { Git } from '@/components/Icons/StackIcons/git'
+import { Github } from '@/components/Icons/StackIcons/github'
+import { GithubActions } from '@/components/Icons/StackIcons/githubactions'
+import { Graphql } from '@/components/Icons/StackIcons/graphql'
+import { Java } from '@/components/Icons/StackIcons/java'
+import { JS } from '@/components/Icons/StackIcons/javascript'
+import { Mongodb } from '@/components/Icons/StackIcons/mongodb'
+import { Postgresql } from '@/components/Icons/StackIcons/postgresql'
+import { Postman } from '@/components/Icons/StackIcons/postman'
+import { Prisma } from '@/components/Icons/StackIcons/prisma'
+import { ReactIcon } from '@/components/Icons/StackIcons/react'
+import { Redis } from '@/components/Icons/StackIcons/redis'
+import { Sass } from '@/components/Icons/StackIcons/sass'
+import { Shadcn } from '@/components/Icons/StackIcons/Shadcn'
+import { Sql } from '@/components/Icons/StackIcons/sql'
+import { Tailwind } from '@/components/Icons/StackIcons/tailwindcss'
+import { Typescript } from '@/components/Icons/StackIcons/typescript'
+import { Vite } from '@/components/Icons/StackIcons/vite'
+import { VsCode } from '@/components/Icons/StackIcons/VS'
+import { Webpack } from '@/components/Icons/StackIcons/webpack'
+import { WebSocket } from '@/components/Icons/StackIcons/Websocket'
+import { Cloudflare } from '@/components/Icons/StackIcons/Cloudflare'
+import React from 'react'
+import { NodejsIcon } from '@/components/Icons/StackIcons/nodejsIcon'
+import Stack from '@/components/Icons/Stack'
+
+const frontendTech: React.FC<React.SVGProps<SVGSVGElement>>[] = [
+  Html,
+  Css,
+  JS,
+  Typescript,
+  ReactIcon,
+  Nextjs,
+  Tailwind,
+  Sass,
+  FramerMotion,
+  Figma,
+  Sql,
+  Shadcn,
+  Vite,
+  Webpack,
+]
+
+const backendAndTools: React.FC<React.SVGProps<SVGSVGElement>>[] = [
+  NodejsIcon,
+  Express,
+  Docker,
+  Prisma,
+  Postgresql,
+  Mongodb,
+  Redis,
+  Graphql,
+  Postman,
+  VsCode,
+  Git,
+  Github,
+  GithubActions,
+  WebSocket,
+  Cloudflare,
+  Java,
+]
 
 const StacksCard = () => {
   return (
-    <div className="shadow-feature-card dark:shadow-feature-card-dark flex h-60 flex-col gap-2 overflow-hidden rounded-xl p-4 lg:p-6">
+    <div className="flex h-60 flex-col gap-2 overflow-hidden rounded-xl p-4 lg:p-6">
       <div className="flex items-center gap-2">
-        <ZapIcon className="size-[18px]" />
-        <h2 className="text-sm font-light">Stacks</h2>
+        <Stack className="size-4" />
+        <h2 className="bg-gradient-to-r from-[#8ebac7] via-[#4d8b9d] to-[#2a4b55] bg-clip-text text-sm font-medium text-transparent">
+          Stacks
+        </h2>
       </div>
       <Marquee gap="20px" className="py-4" fade pauseOnHover>
-        <SiHtml5 className="size-10" />
-        <SiCss3 className="size-10" />
-        <SiJavascript className="size-10" />
-        <SiTypescript className="size-10" />
-        <SiFigma className="size-10" />
-        <SiTailwindcss className="size-10" />
-        <SiNextdotjs className="size-10" />
-        <SiReact className="size-10" />
-        <SiPython className="size-10" />
-        <SiPostgresql className="size-10" />
+        {frontendTech.map((TechComponent, index) => (
+          <TechComponent
+            key={index}
+            className="size-10 grayscale hover:grayscale-0 dark:invert dark:hover:invert-0"
+          />
+        ))}
       </Marquee>
       <Marquee gap="20px" className="py-4" reverse fade pauseOnHover>
-        <SiPrisma className="size-10" />
-        <SiMysql className="size-10" />
-        <SiFirebase className="size-10" />
-        <SiGit className="size-10" />
-        <SiVite className="size-10" />
-        <SiVisualstudiocode className="size-10" />
-        <SiCloudflare className="size-10" />
-        <SiMarkdown className="size-10" />
-        <SiJest className="size-10" />
-        <SiNodedotjs className="size-10" />
+        {backendAndTools.map((TechComponent, index) => (
+          <TechComponent
+            key={index}
+            className="size-10 grayscale hover:grayscale-0 dark:invert dark:hover:invert-0"
+          />
+        ))}
       </Marquee>
     </div>
   )
