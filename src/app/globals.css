@@ -91,18 +91,18 @@ html {
   scroll-behavior: smooth;
 }
 
-*::-webkit-scrollbar-track {
-  background: #ffffff; /* Adjust background color */
+body::-webkit-scrollbar {
+  width: 0px;
 }
 
-/* Handle */
-*::-webkit-scrollbar-thumb {
-  background: #eeeeee; /* Adjust thumb color */
+body::-webkit-scrollbar-thumb {
+  background-color: #eeeeee;
+  border-radius: 1px;
 }
 
-/* Handle on hover */
-*::-webkit-scrollbar-thumb:hover {
-  background: #dddddd; /* Adjust hover color for better visibility */
+body::-webkit-scrollbar-track {
+  background-color: white;
+  width: 12px;
 }
 
 .signature__base {
