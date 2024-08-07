@@ -106,5 +106,5 @@ export const getGitHubStats = cache(
     return await fetchGitHubData()
   },
   [],
-  { revalidate: 86400 }
+  { revalidate: 21600 }
 )

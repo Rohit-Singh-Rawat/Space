@@ -87,6 +87,14 @@ const config = {
           '0%, 100%': { transform: 'rotate(0deg)' },
           '50%': { transform: 'rotate(-12deg)' },
         },
+        scaleUp: {
+          '0%': { transform: 'scaleX(0)' },
+          '100%': { transform: 'scaleX(1)' },
+        },
+        moveUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1 ' },
+        },
       },
 
       animation: {
@@ -96,6 +104,8 @@ const config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
         rotatePositive: 'rotatePositive 1s infinite',
         rotateNegative: 'rotateNegative 1s infinite',
+        scaleUp: 'scaleUp 0.5s ease-out forwards',
+        moveUp: 'moveUp 0.5s ease-out forwards',
       },
     },
   },

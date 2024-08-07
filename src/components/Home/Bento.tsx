@@ -1,5 +1,8 @@
 import BentoIcon from '../Icons/BentoIcon'
 import AnimeCard from './BentoCards/AnimeCard'
+import AnimeCard2 from './BentoCards/AnimeCard2'
+import WakatimeStats from './BentoCards/CodingTimeCard'
+import DashBoardCard from './BentoCards/DashBoardCard'
 import GithubCard from './BentoCards/Githubcard'
 import StacksCard from './BentoCards/StacksCard'
 import Chopstiks from './Chopstiks'
@@ -12,10 +15,12 @@ const Bento = () => {
         <BentoIcon className="w-5" />
         <Chopstiks className="w-5 -translate-x-5 -translate-y-1" />
       </div>
-      <div className="grid grid-cols-5 grid-rows-3 gap-4">
-        <GithubCard />
-        <StacksCard />
-        <AnimeCard />
+      <div className="grid grid-cols-5 grid-rows-6 gap-4">
+        {' '}
+        <StacksCard /> <AnimeCard />
+        <GithubCard /> <DashBoardCard />
+        <AnimeCard2 />
+        <WakatimeStats />
       </div>
     </div>
   )
