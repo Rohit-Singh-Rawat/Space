@@ -79,6 +79,14 @@ const config = {
           from: { transform: 'translateY(0)' },
           to: { transform: 'translateY(calc(-100% - var(--gap)))' },
         },
+        rotatePositive: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(12deg)' },
+        },
+        rotateNegative: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(-12deg)' },
+        },
       },
 
       animation: {
@@ -86,6 +94,8 @@ const config = {
         'marquee-up': 'marquee-up var(--duration, 30s) linear infinite',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        rotatePositive: 'rotatePositive 1s infinite',
+        rotateNegative: 'rotateNegative 1s infinite',
       },
     },
   },

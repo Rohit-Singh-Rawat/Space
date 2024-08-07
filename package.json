@@ -25,6 +25,7 @@
     "nextjs-toploader": "^1.6.12",
     "react": "^18",
     "react-dom": "^18",
+    "react-github-calendar": "^4.2.1",
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7"

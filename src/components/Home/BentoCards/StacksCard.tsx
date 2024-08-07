@@ -31,6 +31,7 @@ import { Cloudflare } from '@/components/Icons/StackIcons/Cloudflare'
 import React from 'react'
 import { NodejsIcon } from '@/components/Icons/StackIcons/nodejsIcon'
 import Stack from '@/components/Icons/Stack'
+import BentoCard from './BentoCard'
 
 const frontendTech: React.FC<React.SVGProps<SVGSVGElement>>[] = [
   Html,
@@ -70,7 +71,7 @@ const backendAndTools: React.FC<React.SVGProps<SVGSVGElement>>[] = [
 
 const StacksCard = () => {
   return (
-    <div className="group/stack bento col-span-4 h-56 p-4 lg:p-6">
+    <BentoCard className="group/stack col-span-4 h-56 p-4 lg:p-6">
       <div className="mb-3 flex items-center gap-2">
         <Stack className="size-4" />
         <h2 className="bg-gradient-to-r from-[#8ebac7] via-[#4d8b9d] to-[#2a4b55] bg-clip-text font-neu text-sm font-medium text-transparent">
@@ -93,7 +94,7 @@ const StacksCard = () => {
           />
         ))}
       </Marquee>
-    </div>
+    </BentoCard>
   )
 }
 
