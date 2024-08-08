@@ -38,8 +38,19 @@ export const Intro = () => {
         </div>
         <p>
           Find me on twitter at{' '}
-          <Link href={'https://x.com/Spacing_Whale'}>x.com</Link> or drop a{' '}
-          <Link href={'mailto:rohitzrawat2003@gmail.com'}>email</Link>
+          <Link
+            href={'https://x.com/Spacing_Whale'}
+            className="wavvy underline-offset-2"
+          >
+            x.com
+          </Link>{' '}
+          or drop a{' '}
+          <Link
+            href={'mailto:rohitzrawat2003@gmail.com'}
+            className="wavvy underline-offset-2"
+          >
+            email
+          </Link>
         </p>
       </div>
     </section>
