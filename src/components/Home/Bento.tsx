@@ -17,10 +17,11 @@ const Bento = () => {
       </div>
       <div className="grid grid-cols-5 grid-rows-6 gap-4">
         {' '}
-        <StacksCard /> <AnimeCard />
+        <AnimeCard />
+        <StacksCard />
         <GithubCard /> <SocialsCard />
-        <AnimeCard2 />
         <WakatimeStats />
+        <AnimeCard2 />
       </div>
     </div>
   )
