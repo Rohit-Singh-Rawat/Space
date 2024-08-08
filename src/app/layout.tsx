@@ -6,6 +6,8 @@ import React from 'react'
 import Header from '@/components/layouts/Header'
 import { Providers } from './Providers'
 import { lombok, neu } from '@/lib/font'
+import Footer from '@/components/layouts/Footer'
+import ScrollToTopButton from '@/components/shared/ScrollToTop'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -56,8 +58,9 @@ export default function RootLayout({ children }: ChildrenProps) {
             <div className="container mx-auto flex min-h-screen max-w-3xl flex-col px-4 py-5">
               {children}
             </div>
+            <ScrollToTopButton />
+            <Footer />
           </div>
-          {/* <Footer /> */}
           <Toaster />
         </Providers>
       </body>

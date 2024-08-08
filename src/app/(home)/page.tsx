@@ -4,7 +4,7 @@ import { Intro } from '@/components/Home/Intro'
 
 const page = () => {
   return (
-    <section className="px-16 pb-16 pt-8 md:mt-8 lg:mt-10">
+    <section className="px-14 pb-16 pt-8 md:mt-8 lg:mt-10">
       <div className="flex items-center justify-between">
         {' '}
         <div>
@@ -20,6 +20,7 @@ const page = () => {
       </div>
 
       <Intro />
+
       <Bento />
     </section>
   )

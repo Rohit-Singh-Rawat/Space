@@ -2,6 +2,7 @@
 import NextTopLoader from 'nextjs-toploader'
 import { ThemeProvider } from '@/context/theme-provider'
 import * as React from 'react'
+import { RecoilRoot } from 'recoil'
 
 interface ChildrenProps {
   readonly children: React.ReactNode
@@ -18,7 +19,7 @@ export function Providers({ children }: ChildrenProps) {
         disableTransitionOnChange
       >
         <NextTopLoader showSpinner={false} color="#91990b" />
-        {children}{' '}
+        <RecoilRoot>{children} </RecoilRoot>
       </ThemeProvider>
     </>
   )
