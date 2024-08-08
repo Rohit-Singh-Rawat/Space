@@ -12,7 +12,7 @@ const AnimeCard = () => {
   const imageSrc = useRecoilValue(animeImageAtom)
 
   return (
-    <BentoCard className="relative col-span-1 row-span-2 h-56 p-0 transition-all duration-500 hover:scale-95">
+    <BentoCard className="relative col-span-2 row-span-1 h-56 p-0 transition-all duration-500 hover:scale-95 xs:col-span-1 xs:row-span-2">
       <AnimatePresence mode="wait">
         <motion.div
           key={imageSrc}
@@ -30,7 +30,7 @@ const AnimeCard = () => {
             width={1079}
             height={2408}
             src={imageSrc}
-            className="size-full object-cover transition-all duration-500 group-hover:scale-[1.35]"
+            className="size-full object-cover object-center transition-all duration-500 group-hover:scale-[1.35] xs:object-cover"
           />
         </motion.div>
       </AnimatePresence>

@@ -62,7 +62,7 @@ const socials = [
 
 const SocialsCard = () => {
   return (
-    <BentoCard className="group-social col-span-3 row-span-2 h-56 p-4 lg:p-6">
+    <BentoCard className="group-social col-span-5 row-span-1 h-56 p-4 xs:col-span-3 xs:row-span-2 lg:p-6">
       {' '}
       <h2 className="bg-gradient-to-r from-[#3a5454] via-[#101c20] to-[#091113] bg-clip-text font-neu text-sm font-medium text-transparent">
         Socials

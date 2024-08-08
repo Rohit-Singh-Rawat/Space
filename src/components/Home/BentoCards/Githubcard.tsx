@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 
 const GithubCard = () => {
   return (
-    <BentoCard className="group/github col-span-2 row-span-4">
+    <BentoCard className="group/github col-span-3 row-span-2 xs:col-span-2 xs:row-span-4">
       <Link
         href={'https://github.com/Rohit-Singh-Rawat'}
         target="_blank"

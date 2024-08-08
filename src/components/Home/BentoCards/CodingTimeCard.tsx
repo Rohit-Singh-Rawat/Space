@@ -11,7 +11,7 @@ async function CodingTimeCard() {
   const hours = Math.round(seconds / 3600)
 
   return (
-    <BentoCard className="group col-span-2 row-span-2 flex h-full flex-col items-start justify-start p-4">
+    <BentoCard className="group col-span-5 row-span-1 flex h-full flex-col items-start justify-start p-4 xs:col-span-2 xs:row-span-2">
       <CodeIcon className="size-5 fill-gray-900 dark:fill-stone-600" />
       <Link
         href={'https://wakatime.com/@Whale_In_Space'}

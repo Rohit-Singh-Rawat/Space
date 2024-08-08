@@ -14,7 +14,7 @@ async function Footer() {
   const year = String(new Date().getFullYear())
 
   return (
-    <footer className="container mx-auto flex max-w-3xl flex-col px-16 py-5">
+    <footer className="container mx-auto flex max-w-3xl flex-col py-5 md:px-16">
       <NowPlaying />
       <Separator className="h-[0.5px] bg-emerald-900/60" />
       <div className="flex items-center py-3 text-sm font-semibold text-[#4B4B4B]">

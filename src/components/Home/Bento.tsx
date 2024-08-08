@@ -15,13 +15,22 @@ const Bento = () => {
         <BentoIcon className="w-5" />
         <Chopstiks className="w-5 -translate-x-5 -translate-y-1" />
       </div>
-      <div className="grid grid-cols-5 grid-rows-6 gap-4">
-        {' '}
+      <div className="hidden grid-cols-5 grid-rows-6 gap-4 xs:grid">
         <AnimeCard />
         <StacksCard />
-        <GithubCard /> <SocialsCard />
+        <GithubCard />
+        <SocialsCard />
         <WakatimeStats />
         <AnimeCard2 />
+      </div>
+
+      <div className="grid grid-cols-5 grid-rows-6 gap-4 xs:hidden">
+        <StacksCard />
+        <GithubCard />
+        <AnimeCard />
+        <AnimeCard2 />
+        <SocialsCard />
+        <WakatimeStats />
       </div>
     </div>
   )
