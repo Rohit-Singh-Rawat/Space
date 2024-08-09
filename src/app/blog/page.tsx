@@ -1,14 +1,15 @@
-import StacksCard from '@/components/Home/BentoCards/StacksCard'
-import { NodejsIcon } from '@/components/Icons/StackIcons/nodejsIcon'
-import { Vite } from '@/components/Icons/StackIcons/vite'
+import React from 'react'
 
-const page = () => {
+const Blog = () => {
   return (
-    <section className="pb-16 pt-8 md:mt-8 lg:mt-10">
-      <Vite className="size-10 grayscale hover:grayscale-0 dark:invert dark:hover:invert-0" />
-      <StacksCard />
-      <NodejsIcon />
-    </section>
+    <div className="mx-auto max-w-4xl px-4 py-8">
+      <h1 className="mb-6 text-4xl font-bold">My Blog</h1>
+      <p className="mb-4 text-lg text-gray-600">
+        Welcome to my blog! Currently, there are no posts available. Check back
+        soon for updates!
+      </p>
+    </div>
   )
 }
-export default page
+
+export default Blog
