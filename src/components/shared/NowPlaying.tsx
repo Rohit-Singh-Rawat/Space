@@ -13,7 +13,7 @@ export default async function NowPlaying() {
           <p className="font-medium text-gray-800 dark:text-gray-200">
             {nowPlayingData === 'Currently Not Playing'
               ? 'Not  Listening'
-              : 'Error fetching song '}
+              : 'Oopsie, No Tunes to Spin!'}
           </p>
           <p className="ml-1 text-gray-500 max-sm:hidden"> – Spotify</p>
         </div>
