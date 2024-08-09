@@ -4,8 +4,7 @@ import Link from 'next/link'
 import CodeIcon from '@/components/Icons/CodeIcon'
 import { VsCode } from '@/components/Icons/StackIcons/VS'
 import { Terminal } from '@/components/Icons/Terminal'
-import getCodingHrs from '@/lib/getCodingHrs'
-
+import { getCodingHrs } from '@/lib/getCodingHrs'
 async function CodingTimeCard() {
   const { seconds } = await getCodingHrs()
   const hours = Math.round(seconds / 3600)

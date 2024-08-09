@@ -1,5 +1,3 @@
-import { unstable_cache as cache } from 'next/cache'
-
 interface GitHubData {
   followers: number
   following: number
@@ -75,6 +73,7 @@ const fetchGitHubData = async (): Promise<GitHubData> => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ query, variables }),
+    next: { revalidate: 21600 },
   })
 
   const data = await response.json()
@@ -101,10 +100,4 @@ const fetchGitHubData = async (): Promise<GitHubData> => {
   }
 }
 
-export const getGitHubStats = cache(
-  async () => {
-    return await fetchGitHubData()
-  },
-  [],
-  { revalidate: 21600 }
-)
+export { fetchGitHubData as getGitHubStats }

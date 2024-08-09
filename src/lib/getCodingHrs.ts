@@ -1,4 +1,3 @@
-import { unstable_cache as cache } from 'next/cache'
 export interface WakatimeRes {
   data: {
     decimal: string
@@ -28,12 +27,14 @@ export const fetchWakatimeStats = async (): Promise<{ seconds: number }> => {
         headers: {
           Authorization: `Basic ${Buffer.from(process.env.WAKATIME_API_KEY || '').toString('base64')}`,
         },
+        next: { revalidate: 3600 },
       }
     )
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`)
     }
     const data: WakatimeRes = await res.json()
+    console.log(data)
     return {
       seconds: data.data.total_seconds,
     }
@@ -42,12 +43,5 @@ export const fetchWakatimeStats = async (): Promise<{ seconds: number }> => {
     throw error
   }
 }
-const getCodingHrs = cache(
-  async () => {
-    return await fetchWakatimeStats()
-  },
-  [],
-  { revalidate: 3600 }
-)
 
-export default getCodingHrs
+export { fetchWakatimeStats as getCodingHrs }
