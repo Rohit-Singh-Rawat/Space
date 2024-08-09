@@ -1,16 +1,16 @@
 import { Github } from '../Icons/StackIcons/github'
 import NowPlaying from '../shared/NowPlaying'
 import { Separator } from '../ui/separator'
-import { execa } from 'execa'
+// import { execa } from 'execa'
 
-async function getLatestCommit() {
-  const { stdout } = await execa('git', ['rev-parse', '--short', 'HEAD'])
+// async function getLatestCommit() {
+//   const { stdout } = await execa('git', ['rev-parse', '--short', 'HEAD'])
 
-  return stdout
-}
+//   return stdout
+// }
 
 async function Footer() {
-  const commit = await getLatestCommit()
+  // const commit = await getLatestCommit()
   const year = String(new Date().getFullYear())
 
   return (
@@ -33,9 +33,9 @@ async function Footer() {
             <span className="bg-gradient-to-l from-gray-600 to-gray-300 bg-clip-text text-transparent">
               Space
             </span>
-            <span className="text-gray-350 dark:text-gray-450 hidden underline decoration-2 underline-offset-2 sm:inline">
+            {/* <span className="text-gray-350 dark:text-gray-450 hidden underline decoration-2 underline-offset-2 sm:inline">
               #{commit}
-            </span>
+            </span> */}
           </span>
         </a>
       </div>
