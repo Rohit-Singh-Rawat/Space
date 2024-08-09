@@ -26,13 +26,17 @@ export const Intro = () => {
           delving into Web3 and backend technologies.
         </p>
 
-        <p>
-          A Snapshot of my work exp{' '}
-          <Link href={'/work'}>
-            .
-            <ArrowUpRight className="inline-block size-4 -translate-x-1 -translate-y-1" />
+        <div className="flex">
+          A Snapshot of my
+          <Link href={'/work'} className="group ml-1 flex">
+            {' '}
+            work exp .
+            <div className="relative size-5 -translate-x-px translate-y-[-2px] overflow-hidden">
+              <ArrowUpRight className="size-4 transition-all duration-300 ease-in-out group-hover:-translate-y-full group-hover:translate-x-full" />
+              <ArrowUpRight className="relative size-4 -translate-x-full transition-all duration-300 ease-in-out group-hover:-translate-y-full group-hover:translate-x-0" />
+            </div>
           </Link>
-        </p>
+        </div>
         <div className="flex w-full items-center justify-center">
           <Separator className="w-14 bg-[#888]/40" />
         </div>

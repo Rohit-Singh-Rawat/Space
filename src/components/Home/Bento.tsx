@@ -24,7 +24,7 @@ const Bento = () => {
         <AnimeCard2 />
       </div>
 
-      <div className="grid grid-cols-5 grid-rows-6 gap-4 xs:hidden">
+      <div className="grid grid-cols-5 grid-rows-5 gap-4 xs:hidden">
         <StacksCard />
         <GithubCard />
         <AnimeCard />

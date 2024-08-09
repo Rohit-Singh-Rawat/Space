@@ -16,12 +16,12 @@ const AnimeCard = () => {
       <AnimatePresence mode="wait">
         <motion.div
           key={imageSrc}
-          initial={{ opacity: 1, filter: 'blur(10px)' }}
+          initial={{ opacity: 0, filter: 'blur(10px)' }}
           animate={{
             opacity: 1,
             filter: 'blur(0px)',
           }}
-          exit={{ opacity: 0, filter: 'blur(20px)' }}
+          exit={{ opacity: 0, filter: 'blur(10px)' }}
           transition={{ duration: 0.5 }}
           className="group absolute left-0 top-0 size-full"
         >

@@ -4,8 +4,8 @@ import { Intro } from '@/components/Home/Intro'
 
 const page = () => {
   return (
-    <section className="px-14 pb-16 pt-8 max-md:px-0 md:mt-8 lg:mt-10">
-      <div className="flex flex-col items-start justify-start md:flex-row md:items-center md:justify-between">
+    <section className="px-14 pb-3 pt-8 max-md:px-0 md:mt-8 md:pb-16 lg:mt-10">
+      <div className="flex flex-col items-start justify-start gap-5 md:flex-row md:items-center md:justify-between">
         {' '}
         <div>
           {' '}

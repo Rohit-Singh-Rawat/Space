@@ -12,10 +12,10 @@ export default async function NowPlaying() {
         <div className="inline-flex w-full max-w-full flex-col truncate sm:flex-row">
           <p className="font-medium text-gray-800 dark:text-gray-200">
             {nowPlayingData === 'Currently Not Playing'
-              ? 'Not Playing'
+              ? 'Not  Listening'
               : 'Error fetching song '}
           </p>
-          <p className="text-gray-500">– Spotify</p>
+          <p className="ml-1 text-gray-500 max-sm:hidden"> – Spotify</p>
         </div>
       </div>
     )
