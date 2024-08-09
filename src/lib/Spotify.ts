@@ -68,7 +68,7 @@ export const getNowPlaying = async (): Promise<NowPlayingData | string> => {
       headers: {
         Authorization: `Bearer ${access_token}`,
       },
-      cache: 'no-cache',
+      next: { revalidate: 300 },
     })
 
     if (response.status > 400) {
