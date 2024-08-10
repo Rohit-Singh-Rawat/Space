@@ -34,7 +34,6 @@ export const fetchWakatimeStats = async (): Promise<{ seconds: number }> => {
       throw new Error(`HTTP error! status: ${res.status}`)
     }
     const data: WakatimeRes = await res.json()
-    console.log(data)
     return {
       seconds: data.data.total_seconds,
     }

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Blog = () => {
@@ -12,8 +13,14 @@ const Blog = () => {
         learning journey.
       </p>
       <p>
-        While I craft these tales, let’s connect—follow me on Twitter for sneak
-        peeks and insights!
+        While I craft these tales, let’s connect—follow me on{' '}
+        <Link
+          href={'https://x.com/Spacing_Whale'}
+          className="wavvy underline-offset-2"
+        >
+          x.com
+        </Link>{' '}
+        for sneak peeks and insights!
       </p>
       <div className="flex items-center justify-center pt-60">
         {' '}

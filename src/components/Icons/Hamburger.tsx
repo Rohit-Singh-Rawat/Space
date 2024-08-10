@@ -8,7 +8,6 @@ const Hamburger = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <path
-      stroke="#363636"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
