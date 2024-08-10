@@ -8,6 +8,7 @@ import { Providers } from './Providers'
 import { lombok, neu } from '@/lib/font'
 import Footer from '@/components/layouts/Footer'
 import ScrollToTopButton from '@/components/shared/ScrollToTop'
+import { Analytics } from '@/components/shared/Analytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: ChildrenProps) {
           <Toaster />
         </Providers>
       </body>
+      <Analytics />
     </html>
   )
 }

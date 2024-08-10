@@ -26,3 +26,11 @@ export const lombok = localFont({
   ],
   variable: '--font-lombok',
 })
+export const cath = localFont({
+  src: [
+    {
+      path: '../../public/font/CATHSGBR.ttf',
+      weight: '400',
+    },
+  ],
+})
