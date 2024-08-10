@@ -6,7 +6,7 @@ export const Analytics = () => {
     <>
       {process.env.NODE_ENV === 'production' && (
         <Script
-          async
+          defer
           data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
           src={`${process.env.NEXT_PUBLIC_UMAMI_URL}/script.js`}
         />
