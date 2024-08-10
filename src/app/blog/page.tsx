@@ -2,13 +2,27 @@ import React from 'react'
 
 const Blog = () => {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
-      <h1 className="mb-6 text-4xl font-bold">My Blog</h1>
-      <p className="mb-4 text-lg text-gray-600">
-        Welcome to my blog! Currently, there are no posts available. Check back
-        soon for updates!
+    <section className="space-y-2 py-5 md:mt-8">
+      {' '}
+      <div className="mb-8 flex items-center justify-between">
+        <h1 className="text-3xl font-bold tracking-tight">read my blogs</h1>
+      </div>{' '}
+      <p>
+        I’ll be cooking about topics like Next.js, animated components, and my
+        learning journey.
       </p>
-    </div>
+      <p>
+        While I craft these tales, let’s connect—follow me on Twitter for sneak
+        peeks and insights!
+      </p>
+      <div className="flex items-center justify-center pt-60">
+        {' '}
+        <div className="absolute flex size-80 items-center justify-center rounded-full bg-gradient-to-t from-white from-30% to-green-500/80 shadow-[inset_-1px_-90px_100px_30px_#fff] dark:from-black dark:to-green-500/60 dark:shadow-[inset_-1px_-90px_100px_30px_#000]"></div>
+        <h1 className="z-10 text-center font-neu text-7xl tracking-widest">
+          COMING SOON
+        </h1>
+      </div>
+    </section>
   )
 }
 

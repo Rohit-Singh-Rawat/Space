@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function WorkPage() {
   return (
-    <section className="px-8 py-5 dark:text-zinc-200 md:mt-8 md:px-14">
+    <section className="py-5 dark:text-zinc-200 md:mt-8">
       <div className="mb-8 flex items-center justify-between">
         <h1 className="text-3xl font-bold tracking-tight">my work</h1>
 
