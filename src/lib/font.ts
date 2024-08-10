@@ -33,4 +33,5 @@ export const cath = localFont({
       weight: '400',
     },
   ],
+  variable: '--font-cath',
 })

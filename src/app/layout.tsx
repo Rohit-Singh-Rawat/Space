@@ -5,7 +5,7 @@ import { Toaster } from '@/components/ui/sonner'
 import React from 'react'
 import Header from '@/components/layouts/Header'
 import { Providers } from './Providers'
-import { lombok, neu } from '@/lib/font'
+import { cath, lombok, neu } from '@/lib/font'
 import Footer from '@/components/layouts/Footer'
 import ScrollToTopButton from '@/components/shared/ScrollToTop'
 import { Analytics } from '@/components/shared/Analytics'
@@ -52,7 +52,9 @@ interface ChildrenProps {
 export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${neu.variable} ${inter.className} ${lombok.variable}`}>
+      <body
+        className={`${neu.variable} ${inter.className} ${cath.variable} ${lombok.variable}`}
+      >
         <Providers>
           <div className="relative dark:bg-black">
             <Header />

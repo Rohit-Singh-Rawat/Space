@@ -1,3 +1,4 @@
+import CdBack from '@/components/shared/CdBack'
 import Link from 'next/link'
 import React from 'react'
 
@@ -29,6 +30,7 @@ const Blog = () => {
           COMING SOON
         </h1>
       </div>
+      <CdBack />
     </section>
   )
 }

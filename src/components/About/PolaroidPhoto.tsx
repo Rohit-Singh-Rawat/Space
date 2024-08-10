@@ -1,5 +1,3 @@
-import { cath } from '@/lib/font'
-import { cn } from '@/lib/utils'
 import Image, { StaticImageData } from 'next/image'
 import { FC } from 'react'
 
@@ -30,12 +28,7 @@ const PolaroidPhoto: FC<PolaroidPhotoProps> = ({
         className="size-40 object-cover grayscale transition-all delay-150 duration-300 group-hover:grayscale-0"
       />
       {text && (
-        <p
-          className={cn(
-            'mt-2 text-center font-bold text-black',
-            cath.className
-          )}
-        >
+        <p className={'mt-2 text-center font-cath font-medium text-black'}>
           {text}
         </p>
       )}

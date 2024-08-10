@@ -21,6 +21,7 @@ const config = {
       fontFamily: {
         neu: 'var(--font-neu)',
         lombok: 'var(--font-lombok)',
+        cath: 'var(--font-cath)',
       },
       colors: {
         border: 'hsl(var(--border))',
