@@ -19,7 +19,7 @@ const NavBar = () => {
   const path = usePathname()
 
   return (
-    <div className="flex w-full flex-col items-end justify-between p-4 px-10">
+    <div className="flex w-full flex-col items-end justify-between p-4 md:px-10">
       <div className="flex flex-row-reverse items-center justify-between md:flex-row">
         <nav className="hidden gap-1 px-1 py-5 md:flex">
           {navItems.map(({ name, href }) => (

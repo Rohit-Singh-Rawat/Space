@@ -29,7 +29,7 @@ const MobileNavBar = () => {
             }}
             transition={{ duration: 0.4 }}
             style={{ originY: 0 }}
-            className="z-50 w-full rounded-b-2xl bg-white py-5 shadow-md dark:bg-black dark:shadow-emerald-900/20 md:hidden"
+            className="z-50 w-full rounded-b-2xl bg-white py-5 shadow-md dark:bg-black dark:shadow-emerald-900/30 md:hidden"
           >
             <div className="flex flex-col items-center justify-center space-y-5">
               {navItems.map(({ name, href }, index) => (

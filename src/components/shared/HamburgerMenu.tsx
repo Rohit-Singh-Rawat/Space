@@ -1,7 +1,6 @@
 import { hamburgerMenuState } from '@/lib/atoms'
 import { useRecoilState } from 'recoil'
-import Hamburger from '../Icons/Hamburger'
-
+import { Hamburger } from '../Icons/Hamburger'
 const HamburgerMenu = ({ className }: { className?: string }) => {
   const [isMenuOpen, setMenuOpen] = useRecoilState(hamburgerMenuState)
 
@@ -14,8 +13,11 @@ const HamburgerMenu = ({ className }: { className?: string }) => {
       className={`bg-transparent outline-none md:hidden ${className}`}
       onClick={toggleMenu}
     >
-      <div className={`hamburger-icon ${isMenuOpen ? 'open' : ''}`}>
-        <Hamburger className="size-9 stroke-black dark:stroke-white" />
+      <div className={`hamburger-icon pl-5 ${isMenuOpen ? 'open' : ''}`}>
+        <Hamburger
+          className="size-5 stroke-black dark:stroke-white"
+          isOpen={isMenuOpen}
+        />
       </div>
     </button>
   )
