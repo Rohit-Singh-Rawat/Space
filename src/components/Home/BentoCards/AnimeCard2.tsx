@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useSetRecoilState } from 'recoil'
 import BentoCard from './BentoCard'
 import { animeImageAtom } from '@/lib/atoms'
+import arima from '../../../../public/images/arima.jpg'
 
 const AnimeCard2 = () => {
   const setImageSrc = useSetRecoilState(animeImageAtom)
@@ -19,7 +20,8 @@ const AnimeCard2 = () => {
           alt="anime"
           width={438}
           height={1100}
-          src={'/images/arima.jpg'}
+          placeholder="blur"
+          src={arima}
           className="size-full object-cover transition-all duration-500 group-hover:scale-[1.35]"
         />
         <p className="quote absolute left-2 top-3 z-10 text-[10px] font-extrabold tracking-[0.2rem] text-black dark:text-black">

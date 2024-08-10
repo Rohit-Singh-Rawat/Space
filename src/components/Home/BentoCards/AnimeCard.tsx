@@ -28,6 +28,8 @@ const AnimeCard = () => {
           <Image
             alt="anime"
             width={1079}
+            placeholder="blur"
+            blurDataURL={imageSrc}
             height={2408}
             src={imageSrc}
             className="size-full object-cover object-center transition-all duration-500 group-hover:scale-[1.35] xs:object-cover"
