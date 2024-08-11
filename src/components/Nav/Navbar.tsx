@@ -12,7 +12,6 @@ const navItems = [
   { name: 'Blog', href: '/blog' },
   { name: 'About', href: '/about' },
   { name: 'Playground', href: '/playground' },
-  { name: 'Contact', href: '/contact' },
 ]
 
 const NavBar = () => {
