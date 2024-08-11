@@ -23,7 +23,6 @@ import { Shadcn } from '@/components/Icons/StackIcons/Shadcn'
 import { Sql } from '@/components/Icons/StackIcons/sql'
 import { Tailwind } from '@/components/Icons/StackIcons/tailwindcss'
 import { Typescript } from '@/components/Icons/StackIcons/typescript'
-import { Vite } from '@/components/Icons/StackIcons/vite'
 import { VsCode } from '@/components/Icons/StackIcons/VS'
 import { Webpack } from '@/components/Icons/StackIcons/webpack'
 import { WebSocket } from '@/components/Icons/StackIcons/Websocket'
@@ -32,6 +31,7 @@ import React from 'react'
 import { NodejsIcon } from '@/components/Icons/StackIcons/nodejsIcon'
 import Stack from '@/components/Icons/Stack'
 import BentoCard from './BentoCard'
+import Vite from '@/components/Icons/StackIcons/vite'
 
 const frontendTech: React.FC<React.SVGProps<SVGSVGElement>>[] = [
   Html,
@@ -69,7 +69,7 @@ const backendAndTools: React.FC<React.SVGProps<SVGSVGElement>>[] = [
   Java,
 ]
 
-const StacksCard = () => {
+const StacksCard = ({ isForSmall = false }: { isForSmall?: boolean }) => {
   return (
     <BentoCard className="group/stack col-span-5 row-span-1 h-56 p-4 xs:col-span-4 xs:row-span-2 lg:p-6">
       <div className="mb-3 flex items-center gap-2">
@@ -82,6 +82,7 @@ const StacksCard = () => {
         {frontendTech.map((TechComponent, index) => (
           <TechComponent
             key={index}
+            id={isForSmall ? `s-${index}` : `${index}`}
             className="size-10 grayscale transition-all duration-500 ease-in-out hover:grayscale-0 dark:invert dark:hover:invert-0"
           />
         ))}
@@ -90,6 +91,7 @@ const StacksCard = () => {
         {backendAndTools.map((TechComponent, index) => (
           <TechComponent
             key={index}
+            id={isForSmall ? `s2-${index}` : `${index}2`}
             className="size-10 grayscale transition-all duration-500 ease-in-out hover:grayscale-0 dark:invert dark:hover:invert-0"
           />
         ))}

@@ -58,7 +58,9 @@
     --chart-5: 340 75% 55%;
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @layer base {
   * {
     @apply border-border;
@@ -167,4 +169,27 @@ body::-webkit-scrollbar-track {
   transition:
     transform 0.2s ease,
     filter 0.3s ease;
+}
+.custom-scroll {
+  overflow: auto;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scroll {
+  scrollbar-width: none;
+}
+
+.custom-scroll {
+  -ms-overflow-style: none;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spinSlow {
+  animation: spin 5s linear infinite;
 }

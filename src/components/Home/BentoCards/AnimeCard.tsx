@@ -38,9 +38,9 @@ const AnimeCard = () => {
       </AnimatePresence>
       <Link
         href={'/playground'}
-        className="absolute right-2 top-2 rounded-full border border-white bg-black p-1 opacity-55 transition-all duration-300 ease-in-out hover:scale-90 hover:opacity-100"
+        className="group absolute right-2 top-2 rounded-full border border-white bg-black p-1 opacity-55 transition-all duration-300 ease-in-out hover:scale-90 hover:opacity-100"
       >
-        <ArrowUpRight className="size-5 text-white" />
+        <ArrowUpRight className="size-5 text-white transition-all duration-700 group-hover:rotate-[360deg]" />
       </Link>
     </BentoCard>
   )

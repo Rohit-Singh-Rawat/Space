@@ -17,7 +17,7 @@ const Bento = () => {
       </div>
       <div className="hidden grid-cols-5 grid-rows-6 gap-4 xs:grid">
         <AnimeCard />
-        <StacksCard />
+        <StacksCard isForSmall={true} />
         <GithubCard />
         <SocialsCard />
         <WakatimeStats />

@@ -6,8 +6,9 @@ const client_secret = process.env.SPOTIFY_CLIENT_SECRET
 const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64')
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`
-const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`
+const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks?limit=10`
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`
+const RECENTLY_PLAYED_ENDPOINT = `https://api.spotify.com/v1/me/player/recently-played?limit=3`
 
 const getAccessToken = async () => {
   const response = await fetch(TOKEN_ENDPOINT, {
@@ -30,6 +31,20 @@ interface SpotifyArtist {
   external_urls: {
     spotify: string
   }
+}
+interface SpotifyTrack {
+  artists: SpotifyArtist[]
+  external_urls: {
+    spotify: string
+  }
+  name: string
+  album: {
+    images: { url: string }[]
+  }
+}
+
+interface SpotifyTopTracksResponse {
+  items: SpotifyTrack[]
 }
 
 interface SpotifyAlbum {
@@ -104,12 +119,100 @@ export const getNowPlaying = async (): Promise<NowPlayingData | string> => {
   }
 }
 
-export const getTopTracks = async () => {
-  const { access_token } = await getAccessToken()
+export const getTopTracks = async (): Promise<
+  | {
+      tracks: {
+        artist: string
+        songUrl: string
+        title: string
+        albumImageUrl: string
+      }[]
+    }
+  | string
+> => {
+  try {
+    const { access_token } = await getAccessToken()
 
-  return fetch(TOP_TRACKS_ENDPOINT, {
-    headers: {
-      Authorization: `Bearer ${access_token}`,
-    },
-  })
+    const response = await fetch(TOP_TRACKS_ENDPOINT, {
+      headers: {
+        Authorization: `Bearer ${access_token}`,
+      },
+      next: { revalidate: 86400 },
+    })
+    if (!response.ok) {
+      throw new Error('Unable to fetch top tracks')
+    }
+
+    const { items }: SpotifyTopTracksResponse = await response.json()
+
+    const tracks = items.slice(0, 10).map((track) => ({
+      artist: track.artists.map((artist) => artist.name).join(', '),
+      songUrl: track.external_urls.spotify,
+      title: track.name,
+      albumImageUrl: track.album.images[0].url,
+    }))
+
+    return { tracks }
+  } catch (error) {
+    console.error('Error fetching top tracks: ', error)
+    return error instanceof Error ? error.message : 'An unknown error occurred'
+  }
+}
+interface SpotifyRecentlyPlayedItem {
+  track: {
+    name: string
+    artists: SpotifyArtist[]
+    album: SpotifyAlbum
+    external_urls: {
+      spotify: string
+    }
+  }
+  played_at: string
+}
+
+interface SpotifyRecentlyPlayedResponse {
+  items: SpotifyRecentlyPlayedItem[]
+}
+
+export const getRecentlyPlayed = async (): Promise<
+  | {
+      tracks: {
+        artist: string
+        songUrl: string
+        title: string
+        albumImageUrl: string
+        playedAt: string
+      }[]
+    }
+  | string
+> => {
+  try {
+    const { access_token } = await getAccessToken()
+
+    const response = await fetch(RECENTLY_PLAYED_ENDPOINT, {
+      headers: {
+        Authorization: `Bearer ${access_token}`,
+      },
+      cache: 'no-cache',
+    })
+
+    if (!response.ok) {
+      throw new Error('Unable to fetch recently played tracks')
+    }
+
+    const { items }: SpotifyRecentlyPlayedResponse = await response.json()
+
+    const tracks = items.map((item) => ({
+      artist: item.track.artists.map((artist) => artist.name).join(', '),
+      songUrl: item.track.external_urls.spotify,
+      title: item.track.name,
+      albumImageUrl: item.track.album.images[0].url,
+      playedAt: item.played_at,
+    }))
+
+    return { tracks }
+  } catch (error) {
+    console.error('Error fetching recently played tracks: ', error)
+    return error instanceof Error ? error.message : 'An unknown error occurred'
+  }
 }
