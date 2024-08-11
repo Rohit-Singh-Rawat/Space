@@ -1,9 +1,9 @@
+import AnimeGrid from '@/components/playground/AnimeGrid'
 import DailyJams from '@/components/playground/DailyJams'
 import LatestSong from '@/components/playground/LastestSong'
+import MangaShowCase from '@/components/playground/MangaShowCase'
 import Playlist from '@/components/playground/Playlist'
-import Saitama from './Saitama'
-import AnimeGrid from './AnimeGrid'
-import MangaShowCase from './MangaShowCase'
+import Saitama from '@/components/playground/Saitama'
 import CdBack from '@/components/shared/CdBack'
 
 const page = () => {
