@@ -3,6 +3,7 @@ import LatestSong from '@/components/playground/LastestSong'
 import Playlist from '@/components/playground/Playlist'
 import Saitama from './Saitama'
 import AnimeGrid from './AnimeGrid'
+import MangaShowCase from './MangaShowCase'
 
 const page = () => {
   return (
@@ -91,6 +92,7 @@ const page = () => {
             something interesting catches my eye.
           </p>
           <p className="my-7">some manga/manhwa i read:</p>
+          <MangaShowCase />
         </div>
       </div>
     </section>
