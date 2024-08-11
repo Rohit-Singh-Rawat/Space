@@ -27,7 +27,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/Icons",
-    "src/components/Home/SmallScrrenBento.tss"
+    "src/components/Home/SmallScrrenBento.tss",
+    "src/components/playground"
   ],
   "exclude": ["node_modules"]
 }

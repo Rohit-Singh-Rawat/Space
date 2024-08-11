@@ -17,15 +17,17 @@ export default async function LatestSong() {
         <div className="my-14 space-y-5">
           <p className="font-cath font-semibold">recently played</p>
           <div className="flex w-full flex-row items-center justify-center space-x-10 text-sm">
-            <div className="relative size-24">
+            <div className="relative size-24 min-w-24">
               <Image
-                className={cn('size-20 rounded-full object-cover shadow-xl')}
+                className={cn(
+                  'size-20 min-w-20 rounded-full object-cover shadow-xl'
+                )}
                 src={song.albumImageUrl}
                 width={300}
                 height={300}
                 alt={song.title}
               />
-              <div className="absolute left-1/2 top-1/2 size-4 -translate-x-1/2 -translate-y-full rounded-full bg-black"></div>
+              <div className="absolute left-1/2 top-1/2 size-4 -translate-x-full -translate-y-full rounded-full bg-black"></div>
             </div>
             <div className="inline-flex w-full max-w-full flex-col justify-center truncate">
               <a
@@ -59,10 +61,10 @@ export default async function LatestSong() {
     <div className="my-14 space-y-5">
       <p className="font-cath font-semibold">listening to</p>
       <div className="flex w-full flex-row items-center justify-center space-x-10 text-sm">
-        <div className="relative size-24">
+        <div className="relative size-24 min-w-24">
           <Image
             className={cn(
-              'size-20 rounded-full object-cover shadow-xl',
+              'size-20 min-w-20 rounded-full object-cover shadow-xl',
               isPlaying ? 'animate-spinSlow' : ''
             )}
             src={albumImageUrl}
@@ -70,7 +72,7 @@ export default async function LatestSong() {
             height={300}
             alt={title}
           />
-          <div className="absolute left-1/2 top-1/2 size-4 -translate-x-1/2 -translate-y-full rounded-full bg-black"></div>
+          <div className="absolute left-1/2 top-1/2 size-4 -translate-x-full -translate-y-full rounded-full bg-black"></div>
         </div>
         <div className="inline-flex w-full max-w-full flex-col justify-center truncate">
           <a
