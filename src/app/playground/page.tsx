@@ -4,6 +4,7 @@ import Playlist from '@/components/playground/Playlist'
 import Saitama from './Saitama'
 import AnimeGrid from './AnimeGrid'
 import MangaShowCase from './MangaShowCase'
+import CdBack from '@/components/shared/CdBack'
 
 const page = () => {
   return (
@@ -94,7 +95,24 @@ const page = () => {
           <p className="my-7">some manga/manhwa i read:</p>
           <MangaShowCase />
         </div>
+      </div>{' '}
+      <div className="py-5">
+        <h1 className="font-lombok text-3xl font-bold tracking-tight">
+          FIT MOMENTS
+        </h1>
+        <div className="my-7 space-y-3">
+          <p>
+            After long hours at my desk, I look forward to hitting the gym. A
+            quick workout revitalizes me and counters the effects of sitting.
+          </p>
+          <p>
+            When possible, I also enjoy playing badminton, which adds a fun,
+            competitive edge to my routine. Both activities keep me active and
+            energized.
+          </p>
+        </div>
       </div>
+      <CdBack />
     </section>
   )
 }
