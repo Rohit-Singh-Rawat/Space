@@ -1,8 +1,8 @@
 import PolaroidPhoto from '@/components/About/PolaroidPhoto'
 
 import p1 from '@/../../public/images/photo1.jpg'
-import p2 from '../../../public/images/photo2.jpg'
-import p3 from '../../../public/images/photo3.jpg'
+import p2 from '@/../../public/images/photo2.jpg'
+import p3 from '@/../../public/images/photo3.jpg'
 import Link from 'next/link'
 import { iconData, inspirationWebsites } from '@/lib/constants'
 import Logo from '@/components/Icons/Logo'
