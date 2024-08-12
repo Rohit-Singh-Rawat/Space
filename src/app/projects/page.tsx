@@ -43,7 +43,7 @@ const page = () => {
         <h2 className="my-8 font-neu text-3xl font-medium tracking-tight">
           Top Projects
         </h2>
-        <div className="grid gap-x-7 gap-y-10 sm:grid-cols-2 lg:gap-x-20">
+        <div className="space-y-14">
           {topProjects.map((project, index) => (
             <ProjectCard
               key={index}
