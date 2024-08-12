@@ -87,3 +87,41 @@ export const inspirationWebsites = [
   { name: 'augen.pro', url: 'https://augen.pro/' },
   { name: 'ui.aceternity.com', url: 'https://ui.aceternity.com/' },
 ]
+export const topProjects = [
+  {
+    href: '/projects/fit-flow',
+    imageSrc: '/images/project/Fit-flow.png',
+    title: 'Fit Flow',
+    year: '2024',
+    tags: ['Fitness', 'Health'],
+    timeline: 'January 2024 - June 2024',
+    tagline: 'Revolutionizing fitness with personalized workouts.',
+  },
+  {
+    href: '/projects/github-timeline',
+    imageSrc: '/images/project/github timeline.png',
+    title: 'GitHub Timeline',
+    year: '2023',
+    tags: ['Tech', 'Productivity'],
+    timeline: 'March 2023 - August 2023',
+    tagline: 'Visualize your GitHub activity in a timeline.',
+  },
+  {
+    href: '/projects/hikari',
+    imageSrc: '/images/project/hikari.png',
+    title: 'Hikari',
+    year: '2023',
+    tags: ['Design', 'Innovation'],
+    timeline: 'April 2023 - December 2023',
+    tagline: 'Brightening up your digital experiences.',
+  },
+  {
+    href: '/projects/space',
+    imageSrc: '/images/project/Space.png',
+    title: 'Space',
+    year: '2024',
+    tags: ['Exploration', 'Education'],
+    timeline: 'July 2024 - Ongoing',
+    tagline: 'Exploring the mysteries of the universe.',
+  },
+]

@@ -1,3 +1,6 @@
+import ProjectCard from '@/components/Project/ProjectCard'
+import { topProjects } from '@/lib/constants'
+
 const page = () => {
   return (
     <section className="pb-16 pt-8 md:mt-8 lg:mt-10">
@@ -12,7 +15,7 @@ const page = () => {
           width="400"
           height="80"
           viewBox="0 0 200 40"
-          className="-translate-x-20 -translate-y-12"
+          className="-translate-y-12 translate-x-[-86px]"
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
@@ -28,13 +31,31 @@ const page = () => {
             </linearGradient>
           </defs>
           <path
-            d="M10 20 L 70 20 L 90 30 H 200"
+            d="M10 20 L 80 20 L 100 30 H 196"
             stroke="url(#line-gradient)"
             strokeWidth="1"
             fill="none"
             strokeLinecap="round"
           />
         </svg>
+      </div>
+      <div>
+        <h2 className="my-8 font-neu text-3xl font-medium tracking-tight">
+          Top Projects
+        </h2>
+        <div className="grid gap-x-7 gap-y-10 sm:grid-cols-2 lg:gap-x-20">
+          {topProjects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              href={project.href}
+              imageSrc={project.imageSrc}
+              title={project.title}
+              tags={project.tags}
+              timeline={project.timeline}
+              tagline={project.tagline}
+            />
+          ))}
+        </div>
       </div>
     </section>
   )

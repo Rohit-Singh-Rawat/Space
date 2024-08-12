@@ -58,9 +58,8 @@ export default function RootLayout({ children }: ChildrenProps) {
         <Providers>
           <div className="relative dark:bg-black">
             <Header />
-            <div className="container mx-auto flex min-h-screen max-w-3xl flex-col px-4 py-5 md:px-16">
-              {children}
-            </div>
+            {children}
+
             <ScrollToTopButton />
             <Footer />
           </div>
