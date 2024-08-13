@@ -6,6 +6,7 @@ import { FramerMotion } from '@/components/Icons/StackIcons/FramerMotion'
 import Umami from '@/components/Icons/Umami'
 import VercelLogoIcon from '@/components/Home/VercelIcon'
 import MdxIcon from '@/components/Home/MdxIcon'
+
 import React from 'react'
 type NavItems = {
   name: string
@@ -92,10 +93,14 @@ export const topProjects = [
     href: '/projects/fit-flow',
     imageSrc: '/images/project/Fit-flow.png',
     title: 'Fit Flow',
+    videoSrc:
+      'https://pasp3hha2jfsaiwz.public.blob.vercel-storage.com/fitflow-bxeIZzEYBBHqSqXUEa1ivzKo4Jq8Ck',
     year: '2024',
     tags: ['Fitness', 'Health'],
     timeline: 'January 2024 - June 2024',
     tagline: 'Revolutionizing fitness with personalized workouts.',
+    sourceCodeHref: 'https://github.com/yourusername/fit-flow',
+    liveDemoHref: 'https://fit-flow.demo.com',
   },
   {
     href: '/projects/github-timeline',
@@ -105,6 +110,8 @@ export const topProjects = [
     tags: ['Tech', 'Productivity'],
     timeline: 'March 2023 - August 2023',
     tagline: 'Visualize your GitHub activity in a timeline.',
+    sourceCodeHref: 'https://github.com/yourusername/github-timeline',
+    liveDemoHref: 'https://github-timeline.demo.com',
   },
   {
     href: '/projects/hikari',
@@ -114,6 +121,8 @@ export const topProjects = [
     tags: ['Design', 'Innovation'],
     timeline: 'April 2023 - December 2023',
     tagline: 'Brightening up your digital experiences.',
+    sourceCodeHref: 'https://github.com/yourusername/hikari',
+    liveDemoHref: 'https://hikari.demo.com',
   },
   {
     href: '/projects/space',
@@ -123,5 +132,7 @@ export const topProjects = [
     tags: ['Exploration', 'Education'],
     timeline: 'July 2024 - Ongoing',
     tagline: 'Exploring the mysteries of the universe.',
+    sourceCodeHref: 'https://github.com/Rohit-Singh-Rawat/Space',
+    liveDemoHref: 'https://space.demo.com',
   },
 ]

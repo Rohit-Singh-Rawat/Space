@@ -49,14 +49,17 @@ const page = () => {
               key={index}
               href={project.href}
               imageSrc={project.imageSrc}
+              videoSrc={project.videoSrc}
               title={project.title}
               tags={project.tags}
               timeline={project.timeline}
               tagline={project.tagline}
+              liveDemoHref={project.liveDemoHref}
+              sourceCodeHref={project.sourceCodeHref}
             />
           ))}
         </div>
-      </div>
+      </div>{' '}
     </section>
   )
 }
