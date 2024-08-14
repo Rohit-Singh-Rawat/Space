@@ -1,6 +1,7 @@
 import AvatarHairpin from '@/components/Home/AvatarHairpin'
 import Bento from '@/components/Home/Bento'
 import { Intro } from '@/components/Home/Intro'
+import BlurFade from '@/components/ui/BlurFade'
 
 const page = () => {
   return (
@@ -9,17 +10,23 @@ const page = () => {
         {' '}
         <div>
           {' '}
-          <h1 className="mb-1 mt-0 text-3xl font-semibold dark:text-white">
-            Rohit Singh Rawat
-          </h1>
-          <div className="max-w-[58ch] text-zinc-600 dark:text-zinc-400">
-            Full Stack Engineer
-          </div>
+          <BlurFade delay={0.5}>
+            <h1 className="mb-1 mt-0 text-3xl font-semibold dark:text-white">
+              Rohit Singh Rawat
+            </h1>
+          </BlurFade>
+          <BlurFade delay={0.6}>
+            <div className="max-w-[58ch] text-zinc-600 dark:text-zinc-400">
+              Full Stack Engineer
+            </div>
+          </BlurFade>
         </div>{' '}
         <AvatarHairpin />
       </div>
 
-      <Intro />
+      <BlurFade delay={0.7}>
+        <Intro />
+      </BlurFade>
 
       <Bento />
     </section>

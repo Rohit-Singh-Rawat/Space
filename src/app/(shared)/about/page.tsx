@@ -7,11 +7,15 @@ import Link from 'next/link'
 import { iconData, inspirationWebsites } from '@/lib/constants'
 import Logo from '@/components/Icons/Logo'
 import CdBack from '@/components/shared/CdBack'
+import { SpacingWhale } from '@/components/Home/SpacingWhle'
 
 const page = () => {
   return (
     <section className="pb-3 pt-8 md:mt-8 md:pb-16 lg:mt-10">
-      <h1 className="text-4xl font-bold tracking-tight">about me</h1>
+      <div className="flex items-end gap-5">
+        <h1 className="text-4xl font-bold tracking-tight">about me</h1>
+        <SpacingWhale />
+      </div>
       <div className="flex flex-wrap items-center justify-center gap-5 py-20 md:gap-20">
         <PolaroidPhoto
           altText="image"
@@ -132,7 +136,7 @@ const page = () => {
             Uncover even more sources of inspiration in the{' '}
             <Link
               className="underline decoration-2"
-              href="https://github.com/Rohit-Singh-Rawat/Space"
+              href="https://github.com/Rohit-Singh-Rawat/Space/#inspiration"
               target="_blank"
               rel="noopener noreferrer"
             >
