@@ -1,5 +1,7 @@
 import ProjectCard from '@/components/Project/ProjectCard'
 import { topProjects } from '@/lib/constants'
+import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 const page = () => {
   return (
@@ -60,6 +62,21 @@ const page = () => {
           ))}
         </div>
       </div>{' '}
+      <div>
+        <h1 className="my-14 text-xl">
+          View more on{' '}
+          <Link
+            href="https://github.com/Rohit-Singh-Rawat?tab=repositories"
+            className="group inline-flex items-center justify-start bg-gradient-to-r from-green-200 via-green-400 to-purple-700 bg-clip-text font-neu text-transparent"
+          >
+            Github
+            <ArrowRight className="ml-2 inline-block size-4 rounded-full border border-transparent stroke-black stroke-1 transition-all duration-300 ease-linear group-hover:-rotate-45 group-hover:border-slate-950 group-hover:stroke-[2px] dark:stroke-white dark:group-hover:border-slate-50" />
+          </Link>
+        </h1>
+        <h1 className="mt-24 bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 bg-clip-text text-center font-neu text-4xl font-extrabold text-transparent opacity-30 md:text-7xl">
+          Shipping More Soon
+        </h1>
+      </div>
     </section>
   )
 }

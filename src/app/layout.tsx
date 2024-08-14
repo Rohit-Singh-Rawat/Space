@@ -3,11 +3,8 @@ import { Inter } from 'next/font/google'
 import '@/app/globals.css'
 import { Toaster } from '@/components/ui/sonner'
 import React from 'react'
-import Header from '@/components/layouts/Header'
 import { Providers } from './Providers'
 import { cath, lombok, neu } from '@/lib/font'
-import Footer from '@/components/layouts/Footer'
-import ScrollToTopButton from '@/components/shared/ScrollToTop'
 import { Analytics } from '@/components/shared/Analytics'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -56,13 +53,7 @@ export default function RootLayout({ children }: ChildrenProps) {
         className={`${neu.variable} ${inter.className} ${cath.variable} ${lombok.variable}`}
       >
         <Providers>
-          <div className="relative dark:bg-black">
-            <Header />
-            {children}
-
-            <ScrollToTopButton />
-            <Footer />
-          </div>
+          <div className="relative dark:bg-black">{children}</div>
           <Toaster />
         </Providers>
       </body>

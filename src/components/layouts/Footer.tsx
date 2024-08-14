@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils'
 import { Github } from '../Icons/StackIcons/github'
 import NowPlaying from '../shared/NowPlaying'
 import { Separator } from '../ui/separator'
@@ -8,12 +9,17 @@ function getLatestCommit() {
   return label
 }
 
-async function Footer() {
+async function Footer({ footerWidth = 'max-w-3xl' }: { footerWidth?: string }) {
   const commit = getLatestCommit()
   const year = String(new Date().getFullYear())
 
   return (
-    <footer className="container mx-auto flex max-w-3xl flex-col py-5 md:px-16">
+    <footer
+      className={cn(
+        'container mx-auto flex flex-col py-5 md:px-16',
+        footerWidth
+      )}
+    >
       <NowPlaying />
       <Separator className="h-[0.5px] bg-emerald-900/60" />
       <div className="flex items-center py-3 text-sm font-semibold text-[#4B4B4B]">
