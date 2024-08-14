@@ -28,7 +28,9 @@ const page = () => {
         <Intro />
       </BlurFade>
 
-      <Bento />
+      <BlurFade delay={0.7}>
+        <Bento />
+      </BlurFade>
     </section>
   )
 }
