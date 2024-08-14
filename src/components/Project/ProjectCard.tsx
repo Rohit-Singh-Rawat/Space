@@ -32,6 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <Link
         className="flex-1"
         href={href}
+        target="_blank"
         rel="noopener noreferrer"
         aria-label={`${title} project link`}
       >
@@ -75,7 +76,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
       </Link>
-      <div className="flex-1 space-y-4 p-4">
+      <div className="flex-1 space-y-3 p-4">
         <h2 className="mb-2 text-xl font-semibold dark:text-white">{title}</h2>
         <p className="mb-2 text-xs text-gray-800 dark:text-gray-50">
           {timeline}
@@ -94,6 +95,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="flex gap-4">
           <Link
             href={sourceCodeHref}
+            target="_blank"
             rel="noopener noreferrer"
             aria-label={`${title} source code link`}
             className="flex items-center justify-around gap-2 rounded-md bg-black/85 px-3 py-2 text-xs font-semibold text-white dark:bg-white dark:text-black"
@@ -103,9 +105,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </Link>
           <Link
             href={liveDemoHref}
+            target="_blank"
             rel="noopener noreferrer"
             aria-label={`${title} live demo link`}
-            className="dark:bg.white group flex items-center justify-around gap-2 rounded-md bg-black/85 px-3 py-2 text-xs font-semibold text-white dark:text-black"
+            className="group flex items-center justify-around gap-2 rounded-md bg-black/85 px-3 py-2 text-xs font-semibold text-white dark:bg-white dark:text-black"
           >
             Live Demo
             <ArrowRight className="size-4 rounded-full border border-transparent stroke-1 transition-all duration-300 ease-linear group-hover:-rotate-45 group-hover:border-slate-50 group-hover:stroke-[2px] dark:group-hover:border-slate-950" />
