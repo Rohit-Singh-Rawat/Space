@@ -132,11 +132,11 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
       </div>
 
       <div className="absolute inset-0 z-10 flex flex-col items-start justify-end overflow-hidden bg-black/40 p-3 opacity-0 transition-all duration-500 group-hover:opacity-100">
-        <p className="translate-y-6 break-words font-neu text-xl font-semibold opacity-0 blur transition-all duration-300 ease-linear group-hover:translate-y-0 group-hover:opacity-100 group-hover:blur-0">
+        <p className="translate-y-6 break-words font-neu text-xl font-semibold text-white opacity-0 blur transition-all duration-300 ease-linear group-hover:translate-y-0 group-hover:opacity-100 group-hover:blur-0">
           {title}
         </p>
         {subtitle && (
-          <p className="translate-y-6 break-words font-neu text-sm font-semibold opacity-0 blur transition-all duration-300 ease-linear group-hover:translate-y-0 group-hover:opacity-100 group-hover:blur-0">
+          <p className="translate-y-6 break-words font-neu text-sm font-semibold text-gray-200 opacity-0 blur transition-all duration-300 ease-linear group-hover:translate-y-0 group-hover:opacity-100 group-hover:blur-0">
             {subtitle}
           </p>
         )}{' '}

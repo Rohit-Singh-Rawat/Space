@@ -1,6 +1,7 @@
 import { getNowPlaying, getRecentlyPlayed } from '@/lib/Spotify'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
+import Link from 'next/link'
 
 export default async function LatestSong() {
   let nowPlayingData = await getNowPlaying()
@@ -30,14 +31,13 @@ export default async function LatestSong() {
               <div className="absolute left-1/2 top-1/2 size-4 -translate-x-full -translate-y-full rounded-full bg-black"></div>
             </div>
             <div className="inline-flex w-full max-w-full flex-col justify-center truncate">
-              <a
+              <Link
                 className="max-w-max truncate font-medium text-gray-800 dark:text-gray-200"
                 href={song.songUrl}
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 {song.title}
-              </a>
+              </Link>
 
               <p className="max-w-max truncate text-gray-700 dark:text-gray-500">
                 {song.artist ?? 'Spotify'}
@@ -75,14 +75,13 @@ export default async function LatestSong() {
           <div className="absolute left-1/2 top-1/2 size-4 -translate-x-full -translate-y-full rounded-full bg-black"></div>
         </div>
         <div className="inline-flex w-full max-w-full flex-col justify-center truncate">
-          <a
+          <Link
             className="max-w-max truncate font-medium text-gray-800 dark:text-gray-200"
             href={songUrl}
             target="_blank"
-            rel="noopener noreferrer"
           >
             {title}
-          </a>
+          </Link>
 
           <p className="max-w-max truncate text-gray-700 dark:text-gray-500">
             {artist ?? 'Spotify'}

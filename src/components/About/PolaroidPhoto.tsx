@@ -21,6 +21,7 @@ const PolaroidPhoto: FC<PolaroidPhotoProps> = ({
       initial={{ filter: 'blur(1px)', scale: 1.2, rotate: `${rotation}deg` }}
       whileInView={{ filter: 'blur(0px)', scale: 1 }}
       style={{ transform: `rotate(${rotation}deg)`, transformOrigin: 'center' }}
+      viewport={{ once: true }}
       transition={{ duration: 0.3, ease: 'linear' }}
       className={`polaroid group h-[215px] w-40 rounded-[1px] bg-white p-2 shadow-md transition-all duration-200 hover:scale-105 dark:shadow-md dark:shadow-emerald-900`}
     >

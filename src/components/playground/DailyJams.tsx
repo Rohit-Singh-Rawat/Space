@@ -52,7 +52,9 @@ const TrackCard = ({
         className="h-full rounded-lg object-cover"
       />
       <div className="absolute inset-0 z-10 overflow-hidden bg-black/40 p-3 opacity-0 transition-all duration-500 group-hover:opacity-100">
-        <p className="break-words font-neu text-xl font-semibold">{title}</p>
+        <p className="break-words font-neu text-xl font-semibold text-white">
+          {title}
+        </p>
         <p className="mt-2 break-words text-xs text-gray-300">{artist}</p>
       </div>
     </Link>

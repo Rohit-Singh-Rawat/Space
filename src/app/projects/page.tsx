@@ -1,4 +1,5 @@
 import ProjectCard from '@/components/Project/ProjectCard'
+import CdBack from '@/components/shared/CdBack'
 import { topProjects } from '@/lib/constants'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
@@ -78,6 +79,7 @@ const page = () => {
           Shipping More Soon
         </h1>
       </div>
+      <CdBack />
     </section>
   )
 }
