@@ -13,8 +13,8 @@ const info = {
   name: 'Rohit Singh Rawat',
   twitter: '@Spacing_Whale',
   description: 'Innovative, skilled software engineer in India.',
-  url: 'https://Spacing_Whale.tech',
-  image: '/meta/meta.png',
+  url: 'https://rohitsinghrawat.tech',
+  image: '/images/icon.png',
 }
 
 export const metadata: Metadata = {
