@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Github } from '../Icons/StackIcons/github'
 import { ArrowRight } from 'lucide-react'
 import BlurFade from '../ui/BlurFade'
+import VideoComponent from '../shared/VideoComponent'
 
 interface ProjectCardProps {
   href: string
@@ -56,17 +57,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
             <div className="flex h-56 justify-center overflow-hidden rounded-lg">
               {videoSrc ? (
-                <video
-                  className="size-full rounded-lg object-cover transition-all duration-300 hover:scale-105"
-                  aria-label={`${title} project video`}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  controls={false}
+                <Suspense
+                  fallback={
+                    <Image
+                      width={1536}
+                      height={1000}
+                      alt={`${title} project image`}
+                      className="size-full rounded-lg object-cover transition-all duration-300 hover:scale-105"
+                      aria-label={`${title} project image`}
+                      src={imageSrc}
+                    />
+                  }
                 >
-                  <source src={videoSrc} />
-                </video>
+                  <VideoComponent fileName={videoSrc} title={title} />
+                </Suspense>
               ) : (
                 <Image
                   width={1536}

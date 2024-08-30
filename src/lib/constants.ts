@@ -91,8 +91,7 @@ export const inspirationWebsites = [
 export const topProjects = [
   {
     href: '/projects/space',
-    videoSrc:
-      'https://pasp3hha2jfsaiwz.public.blob.vercel-storage.com/space-uecizlixlpcAH1cmch9kYp12JQ0ryA.mp4',
+    videoSrc: 'space-uecizlixlpcAH1cmch9kYp12JQ0ryA.mp4',
     imageSrc: '/images/project/Space.png',
     title: 'Space',
     tags: [
@@ -112,8 +111,7 @@ export const topProjects = [
     href: '/projects/fit-flow',
     imageSrc: '/images/project/Fit-flow.png',
     title: 'Fit Flow',
-    videoSrc:
-      'https://pasp3hha2jfsaiwz.public.blob.vercel-storage.com/fitflow-bxeIZzEYBBHqSqXUEa1ivzKo4Jq8Ck',
+    videoSrc: 'fitflow-bxeIZzEYBBHqSqXUEa1ivzKo4Jq8Ck',
     tags: [
       'Nextjs',
       'Prisma',
@@ -129,8 +127,7 @@ export const topProjects = [
   },
   {
     href: '/projects/github-timeline',
-    videoSrc:
-      'https://pasp3hha2jfsaiwz.public.blob.vercel-storage.com/githubtimeline-PxWo4wrOFHi71ER3DdFrN1C8U2D0zE.mp4',
+    videoSrc: 'githubtimeline-PxWo4wrOFHi71ER3DdFrN1C8U2D0zE.mp4',
     imageSrc: '/images/project/github timeline.png',
     title: 'GitHub Timeline',
     tags: ['Nextjs', 'Framer motion', 'Typescript', 'GraphQl', 'TailwindCSS'],
@@ -141,8 +138,7 @@ export const topProjects = [
   },
   {
     href: '/projects/hikari',
-    videoSrc:
-      'https://pasp3hha2jfsaiwz.public.blob.vercel-storage.com/hikari-ya72znzpdAcgxLkGN3GhrKbeUVLx1z.mp4',
+    videoSrc: 'hikari-ya72znzpdAcgxLkGN3GhrKbeUVLx1z.mp4',
     imageSrc: '/images/project/hikari.png',
     title: 'Hikari',
     tags: [
