@@ -68,6 +68,7 @@ Welcome, this is my personal portfolio, featuring my projects, skills, and a bit
 
 ## Aspiration
 Thanks to the following key initiatives, whose contributions are fundamental to the success and growth of this project. Inspired by many, built by one.
+
 - [antfu.me](https://antfu.me/)
 - [beta.vimfn.in](https://beta.vimfn.in)
 - [honghong.me](https://honghong.me)
@@ -163,7 +164,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
