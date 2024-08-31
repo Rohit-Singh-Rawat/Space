@@ -12,9 +12,10 @@ const inter = Inter({ subsets: ['latin'] })
 const info = {
   name: 'Rohit Singh Rawat',
   twitter: '@Spacing_Whale',
-  description: 'Innovative, skilled software engineer in India.',
+  description:
+    'Full-Stack Developer, Next.js Buff, Freelancer, Always Evolving. Crafting web apps to ignite ideas.',
   url: 'https://rohitsinghrawat.tech',
-  image: '/images/icon.png',
+  image: '/images/RohitSinghRawat.png',
 }
 
 export const metadata: Metadata = {
