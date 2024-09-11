@@ -7,7 +7,6 @@ import BlurFade from '../ui/BlurFade'
 import VideoComponent from '../shared/VideoComponent'
 
 interface ProjectCardProps {
-  href: string
   imageSrc: string
   videoSrc?: string
   title: string
@@ -20,7 +19,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
-  href,
   imageSrc,
   videoSrc,
   title,
@@ -36,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="flex flex-col gap-10 sm:flex-row">
         <Link
           className="flex-1"
-          href={href}
+          href={liveDemoHref}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`${title} project link`}

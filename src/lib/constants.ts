@@ -90,7 +90,6 @@ export const inspirationWebsites = [
 ]
 export const topProjects = [
   {
-    href: '/projects/space',
     videoSrc: 'space-uecizlixlpcAH1cmch9kYp12JQ0ryA.mp4',
     imageSrc: '/images/project/Space.png',
     title: 'Space',
@@ -108,7 +107,6 @@ export const topProjects = [
     liveDemoHref: 'https://rohitsinghrawat.tech/',
   },
   {
-    href: '/projects/fit-flow',
     imageSrc: '/images/project/Fit-flow.png',
     title: 'Fit Flow',
     videoSrc: 'fitflow-bxeIZzEYBBHqSqXUEa1ivzKo4Jq8Ck',
@@ -126,7 +124,6 @@ export const topProjects = [
     liveDemoHref: 'https://fit-flow-live.vercel.app/',
   },
   {
-    href: '/projects/github-timeline',
     videoSrc: 'githubtimeline-PxWo4wrOFHi71ER3DdFrN1C8U2D0zE.mp4',
     imageSrc: '/images/project/github timeline.png',
     title: 'GitHub Timeline',
@@ -137,7 +134,6 @@ export const topProjects = [
     liveDemoHref: 'https://git-hub-timeline.vercel.app/',
   },
   {
-    href: '/projects/hikari',
     videoSrc: 'hikari-ya72znzpdAcgxLkGN3GhrKbeUVLx1z.mp4',
     imageSrc: '/images/project/hikari.png',
     title: 'Hikari',

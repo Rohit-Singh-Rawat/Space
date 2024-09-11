@@ -51,7 +51,6 @@ const page = () => {
             <ProjectCard
               key={index}
               delay={index * 0.2}
-              href={project.href}
               imageSrc={project.imageSrc}
               videoSrc={project.videoSrc}
               title={project.title}
