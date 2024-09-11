@@ -17,14 +17,14 @@ const GithubCard = () => {
         <h3 className="bg-gradient-to-b from-gray-300 to-gray-600 bg-clip-text font-neu text-sm text-transparent">
           Github{' '}
         </h3>
+        <div className="flex w-full flex-col items-center justify-center">
+          {' '}
+          <div className="custom__scrollbar h-32 max-h-32 w-36 max-w-36 overflow-hidden">
+            <GithubCalendar username={'Rohit-Singh-Rawat'} />
+          </div>
+          <GithubStats />
+        </div>{' '}
       </Link>
-      <div className="flex w-full flex-col items-center justify-center">
-        {' '}
-        <div className="custom__scrollbar h-32 max-h-32 w-36 max-w-36 overflow-hidden">
-          <GithubCalendar username={'Rohit-Singh-Rawat'} />
-        </div>
-        <GithubStats />
-      </div>
     </BentoCard>
   )
 }
