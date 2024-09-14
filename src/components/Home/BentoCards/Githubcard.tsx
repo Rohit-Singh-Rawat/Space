@@ -8,15 +8,14 @@ import { cn } from '@/lib/utils'
 const GithubCard = () => {
   return (
     <BentoCard className="group/github col-span-3 row-span-2 xs:col-span-2 xs:row-span-4">
-      <Link
-        href={'https://github.com/Rohit-Singh-Rawat'}
-        target="_blank"
-        className="m-3 flex items-center gap-2"
-      >
-        <Github className="size-4" />
-        <h3 className="bg-gradient-to-b from-gray-300 to-gray-600 bg-clip-text font-neu text-sm text-transparent">
-          Github{' '}
-        </h3>
+      <Link href={'https://github.com/Rohit-Singh-Rawat'} target="_blank">
+        <div className="m-3 flex items-center gap-2">
+          {' '}
+          <Github className="size-4" />
+          <h3 className="bg-gradient-to-b from-gray-300 to-gray-600 bg-clip-text font-neu text-sm text-transparent">
+            Github{' '}
+          </h3>
+        </div>
         <div className="flex w-full flex-col items-center justify-center">
           {' '}
           <div className="custom__scrollbar h-32 max-h-32 w-36 max-w-36 overflow-hidden">
