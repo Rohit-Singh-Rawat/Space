@@ -26,8 +26,8 @@ export default function WorkPage() {
       <div className="space-y-5">
         {' '}
         <p>
-          On a quest to explore cutting-edge tech and create captivating web
-          animations, while fueling my passion for learning and growth.
+          Exploring new technologies and creating engaging web experiences,
+          while continuously learning and growing as a developer.
         </p>
         <p>Here &apos;s a snapshot of my journey so far.</p>
       </div>

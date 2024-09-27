@@ -7,23 +7,25 @@ export const Intro = () => {
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
       <div className="space-y-5 text-left">
         <p>
-          Hi, I&apos;m Rohit Singh Rawat, an India-based Full-Stack developer,
-          and I love crafting intuitive and dynamic{' '}
+          Hi, I&apos;m Rohit Singh Rawat, a Full-Stack developer from India. I
+          love crafting intuitive and dynamic{' '}
           <span className="bg-gradient-to-l from-purple-400 to-yellow-400 bg-clip-text text-transparent">
             UIs
           </span>{' '}
           with Next.js.
         </p>
         <p>
-          My expertise lies in developing responsive user interfaces for
-          web-based applications, ensuring a secure and seamless user
-          experience.
+          I specialize in building responsive and user-friendly websites,
+          creating smooth and secure experiences.
         </p>
 
         <p>
-          I find it fun to browse the web and design animated components and
-          websites with tools like Framer motion. At the moment, I&apos;m also
-          delving into Web3 and backend technologies.
+          I enjoy browsing the web and crafting components. You can find some of
+          my{' '}
+          <Link href="https://ui-craft.vercel.app/" target="_blank">
+            <span className="wavvy underline-offset-2">crafts</span>
+          </Link>{' '}
+          here. Currently, I&apos;m exploring Web3 and backend technologies.
         </p>
 
         <div className="flex">

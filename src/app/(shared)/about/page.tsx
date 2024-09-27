@@ -38,9 +38,14 @@ const page = () => {
       </div>
       <div className="group space-y-5 leading-relaxed">
         <p>
-          Hey there! I’m Rohit Singh Rawat, a 20-year-old Full-Stack developer
-          from India who thrives on crafting intuitive and dynamic{' '}
-          <span className="text-teal-500">UIs</span>, especially with{' '}
+          Hey there! I&apos;m Rohit Singh Rawat, a{' '}
+          {Math.floor(
+            (new Date().getTime() - new Date(2003, 8, 1).getTime()) /
+              (365.25 * 24 * 60 * 60 * 1000)
+          )}
+          -year-old Full-Stack developer from India who thrives on crafting
+          intuitive and dynamic <span className="text-teal-500">UIs</span>,
+          especially with{' '}
           <Link
             href="https://nextjs.org"
             target="_blank"
@@ -59,21 +64,21 @@ const page = () => {
           fascinating.
         </p>
         <p>
-          I’m especially intrigued by creating scalable backends and robust
-          applications , which adds another layer of excitement to my work.
+          I enjoy building robust applications and exploring new technologies to
+          enhance my skills.
         </p>
         <p>
-          Lately, I’m exploring backend technologies like{' '}
+          Currently, I&apos;m diving into Web3, blockchain, and{' '}
           <Link
-            href="https://redis.io"
+            href="https://solana.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-red-400"
           >
-            Redis
+            <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+              Solana
+            </span>
           </Link>{' '}
-          and <span className="text-gray-700">WebSockets</span>, with a growing
-          curiosity for <span className="underline">Web3</span> on the horizon.
+          development, expanding my skills in these innovative areas.
         </p>
       </div>
       <div>
