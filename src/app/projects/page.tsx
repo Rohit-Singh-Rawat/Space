@@ -2,7 +2,13 @@ import ProjectCard from '@/components/Project/ProjectCard'
 import CdBack from '@/components/shared/CdBack'
 import { topProjects } from '@/lib/constants'
 import { ArrowRight } from 'lucide-react'
+import { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description: 'My projects and creations.',
+}
 
 const page = () => {
   return (

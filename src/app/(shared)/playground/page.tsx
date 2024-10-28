@@ -5,6 +5,12 @@ import MangaShowCase from '@/components/playground/MangaShowCase'
 import Playlist from '@/components/playground/Playlist'
 import Saitama from '@/components/playground/Saitama'
 import CdBack from '@/components/shared/CdBack'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Playground',
+  description: 'A space for my hobbies: music, anime, gym, and more!',
+}
 
 const page = () => {
   return (

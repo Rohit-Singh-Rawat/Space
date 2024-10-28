@@ -1,6 +1,12 @@
 import CdBack from '@/components/shared/CdBack'
+import { Metadata } from 'next'
 import Link from 'next/link'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: 'Blogs',
+  description: 'Check out my blogs and explore my journey.',
+}
 
 const Blog = () => {
   return (

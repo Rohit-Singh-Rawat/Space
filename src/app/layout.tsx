@@ -20,7 +20,7 @@ const info = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(info.url),
-  title: info.name,
+  title: { default: info.name, template: `%s - ${info.name}` },
   description: info.description,
   authors: {
     name: info.name,

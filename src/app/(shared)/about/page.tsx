@@ -8,6 +8,12 @@ import { iconData, inspirationWebsites } from '@/lib/constants'
 import Logo from '@/components/Icons/Logo'
 import CdBack from '@/components/shared/CdBack'
 import { SpacingWhale } from '@/components/Home/SpacingWhle'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About',
+  description: 'Meet me and my portfolio, Space.',
+}
 
 const page = () => {
   return (
