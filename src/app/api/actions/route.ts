@@ -50,7 +50,7 @@ export function GET(request: Request) {
 
 // POST request handler
 export async function POST(request: Request) {
-  const connection = new Connection(clusterApiUrl('devnet'))
+  const connection = new Connection(clusterApiUrl('mainnet-beta'))
   const requestBody: ActionPostRequest = await request.json()
   const amount = parseFloat(
     new URL(request.url).searchParams.get('amount') ?? '0'
