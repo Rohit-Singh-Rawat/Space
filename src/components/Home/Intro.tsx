@@ -20,8 +20,7 @@ export const Intro = () => {
         </p>
 
         <p>
-          I enjoy browsing the web and crafting components. You can find
-          my{' '}
+          I enjoy browsing the web and crafting components. You can find my{' '}
           <Link href="https://www.rsrcraft.me/" target="_blank">
             <span className="wavvy underline-offset-2">crafts</span>
           </Link>{' '}
